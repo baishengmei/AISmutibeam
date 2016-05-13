@@ -1,0 +1,98 @@
+
+body{
+    background-color: #E9F7F1;
+}
+.wrapper-ais .side-navbar{
+    width: 260px;
+    height: 700px;
+    position: fixed;
+    background-color: #2C2D3F;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+}
+
+.wrapper-ais  .top-navbar{
+    padding-left: 260px;
+    background: transparent;
+    height: 65px;
+    width: 100%;
+    box-shadow: 0 0 3px #1E2121;
+    position: fixed;
+}
+.wrapper-ais .side-navbar .side-heading{
+    padding-top: 18px;
+    background-color: #28293F;
+    width: 260px;
+}
+.wrapper-ais .side-navbar .side-heading p{
+    color: #2B90D0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+.wrapper-ais .side-navbar .side-heading p span{
+    color: #4DA620;
+}
+.wrapper-ais .side-navbar .side-nav{
+    width: 100%;
+}
+.blank{
+    height: 1px;
+    box-shadow: 0 0 3px #7B7B84;
+    /*background-color: #7B7B84;*/
+}
+.wrapper-ais .side-navbar .side-nav{
+    margin-top: 32px;
+}
+.wrapper-ais .side-navbar .side-nav ul li{
+    display: block;
+    padding-top: 12px;
+    font-size: 20px;
+}
+.wrapper-ais .side-navbar .side-nav ul li:focus{
+    color: #3C3F41;
+}
+.wrapper-ais .side-navbar .side-nav ul li span{
+    display: inline-block;
+    margin-right: 20px;
+}
+.wrapper-ais .top-navbar .nav{
+    height: 65px;
+    padding-top: 7px;
+}
+
+.wrapper-ais .top-navbar ul li span{
+    padding-right: 5px;
+}
+
+.wrapper-ais .top-navbar ul li{
+    /*border-left: 1px solid #DDDDDD;*/
+    /*height: 25px;*/
+    margin-right: 7px;
+    margin-left: 7px;
+}
+.wrapper-ais .ais-contain{
+    padding-left: 260px;
+    padding-top: 88px;
+}
+.wrapper-ais .ais-contain #ais_modulation .control_warn{
+    display: block;
+    margin-bottom: 20px !important;
+}
+.wrapper-ais .ais-contain #ais_modulation h4{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wrapper-ais .ais-contain #ais_modulation .control_button button.handle{
+    background-color: #F77527;
+    width: 78px;
+    border: 1px transparent solid;
+}
+.modul_contain tbody input{
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#ais_modulation .control_button .modal tbody tr th{
+    vertical-align: middle;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="wrapper-ais">
+    <div class="side-navbar">
+        <div class="side-heading container">
+            <p>AIS<span>平台</span></p>
+        </div>
+        <div class="blank"></div>
+        <div class="side-nav container">
+            <ul class="nav nav-stacked nav-pills">
+                <li class="active" id="modul_btn"><a href="#"><span class="fa fa-user"></span>调制</a></li>
+                <li id="demodul_btn"><a href="#"><span class="fa fa-user"></span>解调</a></li>
+                <li id="analy_btn"><a href="#"><span class="fa fa-user"></span>分析</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="top-navbar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="fa fa-tablet"></span>工单</a> </li>
+                        <li><a href="#"><span class="fa fa-bell-slash"></span>控制台</a> </li>
+                        <li><a href="#"><span class="fa fa-cogs"></span>控制台</a> </li>
+                        <li><a href="#"><span class="fa  fa-cubes"></span>控制台</a> </li>
+                        <li><a href="#"><span class="fa fa-flag "></span>控制台</a> </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="ais-contain">
+        <div id="ais_modulation" class="show">
+            <div class="container">
+                <div class="control_warn"><img src="img/trumpet2.gif"> <small class="text-danger">关于参数调整的公告</small></div>
+                <div class="panel panel-default control_button">
+                    <div class="panel-body row">
+                        <div class="col-md-2">
+                            <h4>调制控制按钮</h4>
+                        </div>
+                        <div class="col-sm-1 col-md-1 col-sm-offset-6 col-md-offset-6">
+                            <button type="button" class="handle btn btn-info pull-right" data-toggle="modal" data-target="#addModal" id="add">创建</button>
+                        </div>
+
+                        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">创建新数据</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-bordered" id="addTable">
+                                            <tbody>
+                                            <tr>
+                                                <th class="text-center">ID</th>
+                                                <td><input class="form-control" type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">信号名</th>
+                                                <td><input class="form-control" type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">状态</th>
+                                                <td><input class="form-control" type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">信号大小</th>
+                                                <td><input class="form-control" type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">创建时间</th>
+                                                <td><input class="form-control" type="text"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" id="addClose">Close</button>
+                                        <button type="button" class="btn btn-primary" id="addOK">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-1 col-md-1">
+                            <button type="button" class="handle btn btn-info pull-right" id="delete">删除</button>
+                        </div>
+                        <div class="col-sm-1 col-md-1">
+                            <button type="button" class="handle btn btn-info pull-right" id="demodul">解调</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default modul_contain">
+                    <table class="table table-bordered text-center" id="showTable">
+                        <thead>
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">信号名</th>
+                                <th class="text-center">状态</th>
+                                <th class="text-center">信号大小</th>
+                                <th class="text-center">创建时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">273948293
+                                </td>
+                                <td>aaa</td>
+                                <td>aaa</td>
+                                <td>aaa</td>
+                                <td>aaa</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">273948293
+                                </td>
+                                <td>bbb</td>
+                                <td>bbb</td>
+                                <td>bbb</td>
+                                <td>bbb</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">273948293
+                                </td>
+                                <td>ccc</td>
+                                <td>ccc</td>
+                                <td>ccc</td>
+                                <td>ccc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="ais_demodulation" class="hidden">
+            解调页面
+        </div>
+        <div id="ais_analysis" class="hidden">
+            分析页面
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript" src="vendor/jquery/dist/jquery.js"></script>
+<script type="application/javascript" src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script type="application/javascript" src="js/base.js"></script>
+</body>
+</html>

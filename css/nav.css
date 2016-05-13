@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.main{
+    position: relative;
+}
+.main .nav_bar{
+    position: absolute;
+    margin-top: 60px;
+    color: red;
+    margin-left: 30px;
+}
+.main .nav_bar .titleChild{
+    display: none;
+}
+.main .nav_bar .nav_each{
+    margin-top: 20px;
+}
+.showText{
+    display: block;
+}
